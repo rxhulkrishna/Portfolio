@@ -4,9 +4,9 @@ import { NavLink } from "react-router-dom";
 function Navbar() {
   const isActiveStyles = (isActive) => `${isActive ? "text-[#4e2b94]" : ""}`;
   return (
-    <nav className="w-full flex justify-between items-center min-w-0 gap-5 ">
+    <nav className="w-full flex justify-between items-center gap-5 ">
       <span className="fontMonospace font-semibold" >{"<rxhulkrishna />"}</span>
-      <div className="flex gap-10 items-center">
+      <div className="flex gap-10 items-center text-sm">
         <NavLink
           to="/"
           className={({ isActive }) => ` ${isActiveStyles(isActive)}`}

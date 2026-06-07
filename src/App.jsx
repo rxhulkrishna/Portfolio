@@ -7,11 +7,11 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative h-screen overflow-hidden">
       <div className="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#212121_1px,transparent_1px)] bg-size-[24px_24px]"></div>
-      <div className="max-w-7xl mx-auto px-8 py-10 h-full overflow-hidden">
-        <Navbar/>
-        <main className="mt-10 flex-1">
+      <div className="max-w-7xl mx-auto px-8 py-5">
+        <Navbar />
+        <main className="mt-8 flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />

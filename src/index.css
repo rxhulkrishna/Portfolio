@@ -31,3 +31,23 @@ body {
   padding: 8px 16px;
   border-radius: 8px;
 }
+
+.pill {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.035);
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.rowFlex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.projectCard {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.035);
+  padding: 16px;
+  border-radius: 8px;
+}
