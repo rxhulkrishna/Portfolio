@@ -4,11 +4,11 @@ import Card from "../Card";
 function CurrentFocusCard() {
   return (
     <Card className="flex flex-col gap-4 row-span-2">
-      <div className="text-xs flex items-center gap-2 text-white/50">
+      <div className="text-xs flex items-center gap-2 text-white/50 mb-5">
         <span>
           <CheckCircle size="18" />
         </span>
-        <span className="fontMonospace">CURRENT FOCUS</span>
+        <span className="fontMonospace">CURRENTLY LEARNING</span>
       </div>
       <div className="flex flex-col gap-3">
         <div className="flex flex-col text-sm gap-2">

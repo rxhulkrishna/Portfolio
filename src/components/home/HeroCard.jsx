@@ -16,8 +16,8 @@ function HeroCard() {
         </span>
       </h1>
       <p className="text-white/50 text-sm w-[90%]">
-        Frontend Developer focused on building scalable and modern web
-        applications. Experienced with JavaScript, TypeScript, Lit and React.
+        Building scalable and modern web applications with JavaScript,
+        TypeScript, Lit and React.
       </p>
       <div className="flex gap-2 items-center justify-start text-sm">
         <NavLink to="/projects" className="btn-primary flex items-center gap-2">
