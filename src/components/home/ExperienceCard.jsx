@@ -1,5 +1,6 @@
 import { BriefcaseBusiness } from "lucide-react";
 import Card from "../Card";
+import { experienceData } from "../../data/home.json";
 
 function ExperienceCard() {
   return (
@@ -11,11 +12,9 @@ function ExperienceCard() {
         <span className="fontMonospace">EXPERIENCE</span>
       </div>
       <div className="text-xl font-semibold flex items-center gap-2">
-        2 Years
+        {experienceData.years} Years
       </div>
-      <span className="text-base text-white/50">
-        Frontend Development
-      </span>
+      <span className="text-base text-white/50">{experienceData.title}</span>
     </Card>
   );
 }

@@ -2,7 +2,7 @@ import CurrentFocusCard from "../components/home/CurrentFocusCard";
 import ExperienceCard from "../components/home/ExperienceCard";
 import HeroCard from "../components/home/HeroCard";
 import LetsConnectCard from "../components/home/LetsConnectCard";
-import Projects from "../components/home/Projects";
+import Projects from "../components/home/ProjectsCard";
 import SkillsCard from "../components/home/SkillsCard";
 import StatusCard from "../components/home/StatusCard";
 import TechStackCard from "../components/home/TechStackCard";

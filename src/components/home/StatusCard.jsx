@@ -1,5 +1,6 @@
 import { Crosshair } from "lucide-react";
 import Card from "../Card";
+import { statusData } from "../../data/home.json";
 
 function StatusCard() {
   return (
@@ -12,11 +13,9 @@ function StatusCard() {
       </div>
       <div className="text-xl font-semibold flex items-center gap-2">
         <span className="size-1.5 bg-green-500 rounded-full"></span>
-        Open to work
+        {statusData.title}
       </div>
-      <span className="text-sm text-white/50">
-        Full-time roles · Remote / On-site
-      </span>
+      <span className="text-sm text-white/50">{statusData.description}</span>
     </Card>
   );
 }

@@ -1,6 +1,13 @@
 import { Mail, Send } from "lucide-react";
 import Card from "../Card";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { socialData } from "../../data/home.json";
+
+const icons = {
+  github: <FaGithub size="18" />,
+  linkedin: <FaLinkedin size="18" />,
+  email: <Mail size="18" />,
+};
 
 function LetsConnectCard() {
   return (
@@ -16,24 +23,16 @@ function LetsConnectCard() {
           I'm always open to discussing new opportunities.
         </span>
         <div className="rowFlex gap-5">
-          <a
-            href="/"
-            className="border border-white/10 rounded-xl bg-white/[0.035] p-2 cursor-pointer"
-          >
-            <FaGithub size="18" className="" />
-          </a>
-          <a
-            href="/"
-            className="border border-white/10 rounded-xl bg-white/[0.035] p-2 cursor-pointer"
-          >
-            <FaLinkedin size="18" className="" />
-          </a>
-          <a
-            href="/"
-            className="border border-white/10 rounded-xl bg-white/[0.035] p-2 cursor-pointer"
-          >
-            <Mail size="18" className="" />
-          </a>
+          {socialData.map((data) => (
+            <a
+              target="_blank"
+              title={data.label}
+              href={data.url}
+              className="border border-white/10 rounded-xl bg-white/[0.035] p-2 cursor-pointer"
+            >
+              {icons[data.type]}
+            </a>
+          ))}
         </div>
       </div>
     </Card>

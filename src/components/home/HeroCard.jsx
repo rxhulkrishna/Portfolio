@@ -1,6 +1,7 @@
 import { Download, ExternalLink, MapPin } from "lucide-react";
 import Card from "../Card";
 import { NavLink } from "react-router-dom";
+import { heroData } from "../../data/home.json";
 
 function HeroCard() {
   return (
@@ -10,29 +11,29 @@ function HeroCard() {
         Frontend Developer
       </div>
       <h1 className="text-3xl font-bold flex flex-col fontMonospace">
-        Hi, I'm{" "}
+        Hi, I'm
         <span className="bg-linear-to-r from-[#4e2b94] to-white bg-clip-text text-transparent font-bold text-3xl">
-          Rahul Krishna S
+          {heroData.name}
         </span>
       </h1>
-      <p className="text-white/50 text-sm w-[90%]">
-        Building scalable and modern web applications with JavaScript,
-        TypeScript, Lit and React.
-      </p>
+      <p className="text-white/50 text-sm w-[90%]">{heroData.description}</p>
       <div className="flex gap-2 items-center justify-start text-xs lg:text-sm">
         <NavLink
-          to="/projects"
+          to={heroData.buttons[0].link}
           className="btn-primary flex items-center justify-start gap-2"
         >
-          View my work <ExternalLink size="18" />
+          {heroData.buttons[0].label} <ExternalLink size="18" />
         </NavLink>
-        <button className="btn-secondary flex items-center justify-start gap-2 cursor-pointer">
-          Download Resume <Download size="18" />
-        </button>
+        <a
+          href={heroData.buttons[1].link}
+          className="btn-secondary flex items-center justify-start gap-2 cursor-pointer"
+        >
+          {heroData.buttons[1].label} <Download size="18" />
+        </a>
       </div>
       <div className="text-white/50 text-sm flex items-center gap-2">
         <MapPin size="12" />
-        <span>Bangalore, India</span>
+        <span>{heroData.location}</span>
       </div>
     </Card>
   );
