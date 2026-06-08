@@ -11,12 +11,12 @@ function SkillsCard() {
         </span>
         <span className="fontMonospace">SKILLS</span>
       </div>
-      <div className="flex flex-col justify-start gap-2 mb-5">
-        <div className="flex items-center justify-start gap-2">
+      <div className="flex flex-col flex-wrap justify-start gap-2 mb-5">
+        <div className="flex flex-wrap items-center justify-start gap-2">
           <PillChips label="Component Architecture" />
           <PillChips label="Responsive Design" />
         </div>
-        <div className="flex items-center justify-start gap-2">
+        <div className="flex flex-wrap items-center justify-start gap-2">
           <PillChips label="API Integration" />
           <PillChips label="Performance Optimization" />
         </div>

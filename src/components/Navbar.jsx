@@ -1,12 +1,18 @@
-import { SunDim } from "lucide-react";
+import { PanelLeft, SunDim } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const isActiveStyles = (isActive) => `${isActive ? "text-[#4e2b94]" : ""}`;
   return (
     <nav className="w-full flex justify-between items-center gap-5 ">
-      <span className="fontMonospace font-semibold" >{"<rxhulkrishna />"}</span>
-      <div className="flex gap-10 items-center text-sm">
+      <button
+        type="button"
+        className="border lg:hidden border-white/10 rounded-xl bg-white/[0.035] p-2 cursor-pointer"
+      >
+        <PanelLeft size="22" className="" />
+      </button>
+      <span className="fontMonospace font-semibold">{"<rxhulkrishna />"}</span>
+      <div className="hidden lg:flex gap-10 items-center text-sm">
         <NavLink
           to="/"
           className={({ isActive }) => ` ${isActiveStyles(isActive)}`}

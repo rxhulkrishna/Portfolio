@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 function HeroCard() {
   return (
-    <Card className="row-span-2 flex flex-col gap-3 justify-between">
+    <Card className="md:row-span-2 flex flex-col gap-3 justify-between">
       <div className="text-xs px-4 py-2 bg-white/5 rounded-full flex items-center justify-center gap-2 w-max">
         <span className="size-1.5 bg-[#4e2b94] rounded-full"></span>
         Frontend Developer
@@ -19,11 +19,14 @@ function HeroCard() {
         Building scalable and modern web applications with JavaScript,
         TypeScript, Lit and React.
       </p>
-      <div className="flex gap-2 items-center justify-start text-sm">
-        <NavLink to="/projects" className="btn-primary flex items-center gap-2">
+      <div className="flex gap-2 items-center justify-start text-xs lg:text-sm">
+        <NavLink
+          to="/projects"
+          className="btn-primary flex items-center justify-start gap-2"
+        >
           View my work <ExternalLink size="18" />
         </NavLink>
-        <button className="btn-secondary flex items-center gap-2 cursor-pointer">
+        <button className="btn-secondary flex items-center justify-start gap-2 cursor-pointer">
           Download Resume <Download size="18" />
         </button>
       </div>

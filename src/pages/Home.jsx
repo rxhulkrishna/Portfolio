@@ -9,7 +9,7 @@ import TechStackCard from "../components/home/TechStackCard";
 
 function Home() {
   return (
-    <div className="grid grid-cols-[1.2fr_1fr_1fr] auto-rows-[170px] gap-5">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.2fr_1fr_1fr] lg:auto-rows-[170px] gap-5">
       <HeroCard />
       <StatusCard />
       <ExperienceCard />

@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="relative h-screen overflow-hidden">
+    <div className="relative h-screen lg:overflow-hidden">
       <div className="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#212121_1px,transparent_1px)] bg-size-[24px_24px]"></div>
       <div className="max-w-7xl mx-auto px-8 py-5">
         <Navbar />

@@ -14,7 +14,9 @@ function StatusCard() {
         <span className="size-1.5 bg-green-500 rounded-full"></span>
         Open to work
       </div>
-      <span className="text-sm text-white/50">Full-time roles · Remote / On-site</span>
+      <span className="text-sm text-white/50">
+        Full-time roles · Remote / On-site
+      </span>
     </Card>
   );
 }

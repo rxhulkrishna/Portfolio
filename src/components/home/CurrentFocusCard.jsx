@@ -3,8 +3,8 @@ import Card from "../Card";
 
 function CurrentFocusCard() {
   return (
-    <Card className="flex flex-col gap-4 row-span-2">
-      <div className="text-xs flex items-center gap-2 text-white/50 mb-5">
+    <Card className="flex flex-col gap-4 lg:row-span-2 gap-2">
+      <div className="text-xs flex items-center gap-2 text-white/50 lg:mb-5">
         <span>
           <CheckCircle size="18" />
         </span>
