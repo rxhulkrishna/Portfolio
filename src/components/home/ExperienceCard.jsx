@@ -11,10 +11,10 @@ function ExperienceCard() {
         </span>
         <span className="fontMonospace">EXPERIENCE</span>
       </div>
-      <div className="text-xl font-semibold flex items-center gap-2">
+      <div className="text-lg lg:text-xl font-semibold flex items-center gap-2">
         {experienceData.years} Years
       </div>
-      <span className="text-base text-white/50">{experienceData.title}</span>
+      <span className="text-sm text-white/50">{experienceData.title}</span>
     </Card>
   );
 }

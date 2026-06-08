@@ -7,8 +7,8 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="relative h-screen lg:overflow-hidden">
-      <div className="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#212121_1px,transparent_1px)] bg-size-[24px_24px]"></div>
+    <div className="relative min-h-screen lg:overflow-hidden">
+      <div className="fixed inset-0 -z-10 h-full w-full bg-[radial-gradient(#212121_1px,transparent_1px)] bg-size-[24px_24px] bg-attachment-fixed"></div>
       <div className="max-w-7xl mx-auto px-8 py-5">
         <Navbar />
         <main className="mt-8 flex-1">

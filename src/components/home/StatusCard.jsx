@@ -11,7 +11,7 @@ function StatusCard() {
         </span>
         <span className="fontMonospace">STATUS</span>
       </div>
-      <div className="text-xl font-semibold flex items-center gap-2">
+      <div className="text-lg lg:text-xl font-semibold flex items-center gap-2">
         <span className="size-1.5 bg-green-500 rounded-full"></span>
         {statusData.title}
       </div>
