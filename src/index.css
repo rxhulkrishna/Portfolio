@@ -23,7 +23,21 @@
   --color-dot: #2a4232;
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-bg: #f5f4f0;
+    --color-hero: #1a1a18;
+    --color-body: #4a4a47;
+    --color-comment: #a0a09a;
+    --color-divider: #e0dfd8;
+    --color-nav: #6a6a66;
+    --color-stack: #8a8a86;
+    --color-purple-accent: #5a56a0;
+    --color-purple-hover: #6a66a8;
+  }
+}
+
 body {
-  background-color: #0f0f0e;
+  background-color: var(--color-bg);
   color: rgb(214, 214, 214);
 }

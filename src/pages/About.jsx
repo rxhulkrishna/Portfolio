@@ -40,7 +40,7 @@ function About() {
         </ul>
       </div>
       <div className="w-full h-px bg-divider"></div>
-      <div className="flex flex-col gap-3 md:grid md:grid-cols-[1.5fr_1fr] md:gap-10 md:items-start md:justify-start">
+      <div className="flex flex-col gap-5 md:grid md:grid-cols-[1.5fr_1fr] md:gap-10 md:items-start md:justify-start">
         <div className="flex flex-col gap-3">
           <span className="text-comment">//education</span>
           <div className="flex flex-wrap justify-between">
