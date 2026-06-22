@@ -1,49 +1,40 @@
-import { PanelLeft, SunDim } from "lucide-react";
+import { Menu } from "lucide-react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import PopupMenu from "./PopupMenu";
+const isActiveStyles = (isActive) => `${isActive ? "text-purple-accent" : ""}`;
 
 function Navbar() {
-  const isActiveStyles = (isActive) => `${isActive ? "text-[#4e2b94]" : ""}`;
+  const [isMenu, setIsMenu] = useState(false);
+  function handleMenu() {
+    setIsMenu(!isMenu);
+  }
   return (
-    <nav className="w-full flex justify-between items-center gap-5 ">
+    <nav className="w-full flex justify-between items-center gap-5 relative">
+      {isMenu && <PopupMenu handleMenu={handleMenu} />}
+      <NavLink to="/" className="hover:text-purple-accent">
+        rxhulkrishna<span className="text-purple-accent">.dev</span>
+      </NavLink>
       <button
-        type="button"
-        className="border lg:hidden border-white/10 rounded-xl bg-white/[0.035] p-2 cursor-pointer"
+        className=" md:hidden hover:text-purple-accent p-2 cursor-pointer"
+        onClick={handleMenu}
       >
-        <PanelLeft size="22" className="" />
+        <Menu size="22" className="outline-none" />
       </button>
-      <span className="fontMonospace font-semibold">{"<rxhulkrishna />"}</span>
-      <div className="hidden lg:flex gap-10 items-center text-sm">
+      <div className="hidden md:flex gap-10 items-center text-sm">
         <NavLink
-          to="/"
-          className={({ isActive }) => ` ${isActiveStyles(isActive)}`}
+          to="/about"
+          className={({ isActive }) => `${isActiveStyles(isActive)}`}
         >
-          HOME
+          about
         </NavLink>
         <NavLink
           to="/projects"
           className={({ isActive }) => `${isActiveStyles(isActive)}`}
         >
-          PROJECTS
-        </NavLink>
-        <NavLink
-          to="/skills"
-          className={({ isActive }) => `${isActiveStyles(isActive)}`}
-        >
-          SKILLS
-        </NavLink>
-        <NavLink
-          to="/about"
-          className={({ isActive }) => `${isActiveStyles(isActive)}`}
-        >
-          ABOUT
+          projects
         </NavLink>
       </div>
-      <button
-        type="button"
-        className="border border-white/10 rounded-xl bg-white/[0.035] p-2 cursor-pointer"
-      >
-        <SunDim size="22" className="" />
-      </button>
     </nav>
   );
 }

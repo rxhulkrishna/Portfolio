@@ -67,15 +67,15 @@
   "projectsData": [
     {
       "name": "Portfolio",
-      "techs": "React • Tailwind"
+      "techs": "React, Tailwind"
     },
     {
       "name": "Atmos",
-      "techs": "React • OpenWeather API"
+      "techs": "React, OpenWeather API"
     },
     {
       "name": "Task Flow",
-      "techs": "React • Local Storage"
+      "techs": "React, Local Storage"
     }
   ],
   

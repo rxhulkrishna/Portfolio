@@ -1,23 +1,56 @@
-import CurrentFocusCard from "../components/home/CurrentFocusCard";
-import ExperienceCard from "../components/home/ExperienceCard";
-import HeroCard from "../components/home/HeroCard";
-import LetsConnectCard from "../components/home/LetsConnectCard";
-import Projects from "../components/home/ProjectsCard";
-import SkillsCard from "../components/home/SkillsCard";
-import StatusCard from "../components/home/StatusCard";
-import TechStackCard from "../components/home/TechStackCard";
+import { projectsData, socialData } from "../data/home.json";
 
 function Home() {
+  function numberFormat(num) {
+    return String(num).padStart(2, "0");
+  }
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.2fr_1fr_1fr] lg:auto-rows-[170px] gap-5">
-      <HeroCard />
-      <StatusCard />
-      <ExperienceCard />
-      <TechStackCard />
-      <CurrentFocusCard />
-      <Projects />
-      <SkillsCard />
-      <LetsConnectCard />
+    <div className="flex flex-col gap-10 my-5 md:mt-10 w-full">
+      <div className="flex flex-col gap-3">
+        <span className="text-comment">~/portfolio $</span>
+        <header className="text-hero text-4xl">Rahul Krishna S</header>
+        <span className="flex flex-col gap-3 md:flex-row ">
+          <div className="flex flex-wrap gap-3">
+            <span>frontend dev</span>
+            <span className="text-purple-accent">
+              · js / ts / react / lit ·
+            </span>
+          </div>
+          <span>bengaluru</span>
+        </span>
+      </div>
+      <div className="flex flex-col gap-3">
+        <span className="text-comment">//about</span>
+        <span className="flex flex-wrap md:w-125">
+          Two years building web interfaces. Comfortable with Javascript,
+          Typescript, Lit and React. Looking for frontend roles at
+          product-focused startups.
+        </span>
+      </div>
+      <div className="flex flex-col gap-3">
+        <span className="text-comment">//projects</span>
+        {projectsData.map((data, idx) => (
+          <div>
+            {numberFormat(idx + 1)} -{" "}
+            <span className="text-purple-accent hover:cursor-pointer hover:text-purple-hover">
+              {data.name}
+            </span>{" "}
+            • <span className="lowercase">{data.techs}</span>
+          </div>
+        ))}
+      </div>
+      <div className="w-full h-px bg-divider"></div>
+      <div className="flex flex-row gap-5">
+        {socialData.map((data) => (
+          <a
+            href={data.url}
+            target="_blank"
+            className="hover:text-purple-accent"
+          >
+            {data.label}
+          </a>
+        ))}
+      </div>
     </div>
   );
 }

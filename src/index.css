@@ -1,53 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 @import 'tailwindcss';
 @layer base{
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-
+    font-family: 'DM Mono';
   }
 }
 
+@theme {
+  --color-bg: #0f0f0e;
+  --color-hero: #d0cfca;
+  --color-body: #484846;
+  --color-comment: #252523;
+  --color-divider: #191918;
+  --color-purple-accent: #6a66a8;
+  --color-purple-hover: #9a96d8;
+  --color-purple-sub: #5a56a0;
+  --color-nav: #2a2a28;
+  --color-stack: #2e2e2c;
+  --color-dot: #2a4232;
+}
+
 body {
-  background-color: #080b11;
+  background-color: #0f0f0e;
   color: rgb(214, 214, 214);
-}
-
-.fontMonospace {
-  font-family: 'Fira code';
-}
-
-.btn-primary {
-  background-color: #4e2b94;
-  padding: 8px 16px;
-  border-radius: 8px;
-}
-
-.btn-secondary {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background-color: rgba(255, 255, 255, 0.035);
-  padding: 8px 16px;
-  border-radius: 8px;
-}
-
-.pill {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background-color: rgba(255, 255, 255, 0.035);
-  padding: 4px;
-  border-radius: 8px;
-}
-
-.rowFlex {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.projectCard {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background-color: rgba(255, 255, 255, 0.035);
-  padding: 16px;
-  border-radius: 8px;
 }
