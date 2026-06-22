@@ -10,7 +10,7 @@ function App() {
       <div className="fixed inset-0 -z-10 h-full w-full"></div>
       <div className="max-w-7xl mx-auto px-8 py-5">
         <Navbar />
-        <main className="mt-8 flex-1">
+        <main className="mt-8 flex-1 w-full">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />

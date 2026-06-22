@@ -1,84 +1,40 @@
 {
-  "heroData": {
-    "name": "Rahul Krishna S",
-    "description": "Building scalable and modern web applications with JavaScript, TypeScript, Lit and React.",
-    "location": "Bangalore, India",
-    "buttons": [
-      {
-        "label": "View my work",
-        "link": "/projects"
-      },
-      {
-        "label": "Download Resume",
-        "link": "/resume.pdf"
-      }
-    ]
-  },
-  
-  "experienceData": {
-    "years": 2,
-    "title": "Frontend Development"
-  },
-  
-  "statusData": {
-    "isActive": true,
-    "title": "Open to work",
-    "description": "Full-time roles · Remote / On-site"
-  },
-  
-  "learningData": [
-    {
-      "title": "React Development",
-      "description": "Building modern applications"
-    },
-    {
-      "title": "Frontend Architecture",
-      "description": "Scalable project structure"
-    },
-    {
-      "title": "Animations",
-      "description": "Framer Motion & interactions"
-    },
-    {
-      "title": "Side Projects",
-      "description": "Portfolio & Atmos"
-    }
-  ],
-  
   "skillsData": [
     "Component Architecture",
     "Responsive Design",
     "API Integration",
     "Performance Optimization"
   ],
-  
+
   "techStackData": [
-    "Javascript",
-    "Typescript",
-    "Lit",
-    "Tailwind CSS",
-    "React",
-    "HTML",
-    "CSS",
-    "CI / CD",
-    "Github Actions"
+    "lang — javascript, typescript",
+    "frameworks — lit, web components, react",
+    "styling — tailwind css, responsive design",
+    "tools — git, github actions, ci/cd",
+    "methods — agile, scrum"
   ],
-  
+
   "projectsData": [
     {
       "name": "Portfolio",
-      "techs": "React, Tailwind"
+      "techs": "react, tailwind css",
+      "description": "personal portfolio website built with react and tailwind css",
+      "url": "https://github.com/rxhulkrishna/portfolio"
     },
     {
       "name": "Atmos",
-      "techs": "React, OpenWeather API"
+      "techs": "react, openweather api",
+      "description": "responsive weather app with real-time forecasts and location-based search",
+      "url": "https://github.com/rxhulkrishna/atmos"
     },
     {
       "name": "Task Flow",
-      "techs": "React, Local Storage"
+      "techs": "react, local storage",
+      "description": "task management app with local storage persistence",
+      "url": "https://github.com/rxhulkrishna/taskflow"
     }
   ],
-  
+
   "socialData": [
     {
       "type": "github",

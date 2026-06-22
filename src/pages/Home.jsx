@@ -5,7 +5,7 @@ function Home() {
     return String(num).padStart(2, "0");
   }
   return (
-    <div className="flex flex-col gap-10 my-5 md:mt-10 w-full">
+    <div className="flex flex-col gap-5 md:gap-8 my-5 md:mt-8 w-full">
       <div className="flex flex-col gap-3">
         <span className="text-comment">~/portfolio $</span>
         <header className="text-hero text-4xl">Rahul Krishna S</header>
@@ -16,7 +16,7 @@ function Home() {
               · js / ts / react / lit ·
             </span>
           </div>
-          <span>bengaluru</span>
+          <span>bangalore</span>
         </span>
       </div>
       <div className="flex flex-col gap-3">

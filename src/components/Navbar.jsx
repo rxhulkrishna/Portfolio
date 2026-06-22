@@ -23,14 +23,26 @@ function Navbar() {
       </button>
       <div className="hidden md:flex gap-10 items-center text-sm">
         <NavLink
+          to="/"
+          className={({ isActive }) =>
+            `${isActiveStyles(isActive)} hover:text-purple-accent`
+          }
+        >
+          home
+        </NavLink>
+        <NavLink
           to="/about"
-          className={({ isActive }) => `${isActiveStyles(isActive)}`}
+          className={({ isActive }) =>
+            `${isActiveStyles(isActive)} hover:text-purple-accent`
+          }
         >
           about
         </NavLink>
         <NavLink
           to="/projects"
-          className={({ isActive }) => `${isActiveStyles(isActive)}`}
+          className={({ isActive }) =>
+            `${isActiveStyles(isActive)} hover:text-purple-accent`
+          }
         >
           projects
         </NavLink>
